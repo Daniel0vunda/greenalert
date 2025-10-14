@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Waste Report - GreenAlert</title>
+</head>
+<body>
+    <h2>Submit Waste Report</h2>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit Report</button>
+    </form>
+
+</body>
+</html>
