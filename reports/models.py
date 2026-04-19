@@ -10,4 +10,4 @@ class WasteReport(models.Model):
     
     
     def __str__(self):
-        return f"(self.location) - {self.status}"
+        return f"{self.location} - {self.status}"
